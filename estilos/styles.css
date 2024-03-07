@@ -65,7 +65,9 @@ body{
     background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
 }
 
-
+.jumbotron .clientesTitulo{
+    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(14\).png);
+}
 /* H2-Oferta */
 h2{
     display: block;
@@ -198,20 +200,80 @@ p.price {
     transform: scale(1.2);
 }
 
+/* Clientes */
+
+.intro{
+    background-color: hsla(36, 3%, 30%, 0.74);
+    width: 100%;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 20px;
+    border: 5px solid #FFBD59;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container{
+    background-color: hsla(36, 3%, 30%, 0.356);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.container img{
+    display: block;
+    margin: 0 auto;
+    width:fit-content;
+    height: 150px;
+    border: 5px solid #e68b14
+}
+
+h3{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: #FFBD59;
+    margin-bottom: 15px;
+}
+
+.container p{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+p{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.p, span{
+    color: #FFBD59;
+}
+
 /* Media Queries Index.html */
 @media only screen and (max-width:600px){
     footer{
-        width: 600px;
+        width: 700px;
     }
 }
 @media only screen and (max-width:600px){
     .p-5.jumbotron{
-        width: 600px;
+        width: 700px;
+    }
+}
+@media only screen and (max-width:1200px){
+    footer{
+        width: 800px;
+    }
+}
+@media only screen and (max-width:1200px){
+    .p-5.jumbotron{
+        width: 800px;
     }
 }
 @media only screen and (max-width:600px){
     h2{
-        width: 500px;
+        width: 600px;
         font-size: 20px;
         display: grid;
         place-items: center;
@@ -220,9 +282,45 @@ p.price {
 }
 
 
+@media only screen and (max-width:700px){
+    main{
+        width: 700px;
+    }
+}
+
+
+/* Media Queries Clientes.html */
+@media only screen and (max-width:600px){
+    .intro{
+        width: 700px;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .container{
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .container{
+        width: 700px;
+    }
+}
+
+
+
+@media only screen and (max-width:1200px){
+    .container img{
+        width: 150px;
+        height: auto;
+    }
+}
+
+
 
 /*Footer*/
-
 
 footer{
     background-color: hsla(36, 3%, 30%, 0.911);
