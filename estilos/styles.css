@@ -4,6 +4,7 @@
 }
 
 body{
+    width: 100vw;
     background-color: black; 
 }
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
@@ -14,6 +15,8 @@ body{
 }
 
 .navbar{
+    right: 0;
+    left: 0;
     width: 100%;
     background-color: hsla(36, 3%, 30%, 0.911);
     z-index: 1;
@@ -74,27 +77,31 @@ body{
 }
 
 /* H2-Oferta */
+main {
+    width: 100vw;
+    overflow: hidden;
+}
 h2{
+    width: 70%;
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
     background-color: #FFBD59;
     font-size: 40px;
     color: white;
     text-shadow: 0 0 5px black;
     text-align: center;
-    width: 70%;
     border-radius: 10px;
     border: 5px solid orange;
     padding: 5px;
     box-shadow: inset 0 0 10px orange;
-    margin-bottom: 30px;
-    margin-top: 30px;
+
 }
 /* Main-Indumentaria */
 .conteiner-items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: 90%;
 }
 
 .item{
@@ -103,12 +110,8 @@ h2{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    width: 600px;
-    border-radius: 30px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    width: 90%;
+    border-radius: 50px;
     overflow: hidden;
 }
 
@@ -117,7 +120,7 @@ h2{
 }
 
 .item img{
-    width: 650px; 
+    width: 100%;
     transition: all .5s;
 }
 
@@ -256,112 +259,36 @@ p{
 }
 
 /* Nosotros */
-/*Maps*/
-.maps, .iframe{
-    display: block;
-    margin: 0 auto;
-    width: 500px;
-    overflow: hidden;
-
-}
-
-.maps, h2{
-    margin-top: 10px;
-}
-
-/*Galeria*/
-
-.galeria{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 200px);
-    padding: 20px;
-    grid-gap: 20px
-}
-
-.item-g{
-    border: 2px solid;
-    background-color: #e68b14;
-    background-size: cover;
-    background-position: center;
-}
-
-.item1{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(4\).png);
-}
-
-.item2{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(2\).png);
-}
-
-.item3{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(5\).png);
-}
-
-.item4{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(6\).png);
-}
-
-.item5{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(27\).png);
-}
-
-.item6{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(29\).png);
-}
-
-.item7{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(8\).png);
-}
-
-.item8{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(7\).png);
-}
-
-/* Media Galeria*/
-
-@media only screen and (min-width:480px){
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 400px);
-    }
-}
 
 /* Media Queries Index.html */
-@media only screen and (max-width:600px){
+@media  screen and (width < 600px) {
     footer{
-        width: 700px;
+        width: 100%;
     }
-}
-@media only screen and (max-width:600px){
     .p-5.jumbotron{
-        width: 700px;
+        width: max-content;
     }
-}
-@media only screen and (max-width:1200px){
-    footer{
-        width: 800px;
-    }
-}
-@media only screen and (max-width:1200px){
-    .p-5.jumbotron{
-        width: 800px;
-    }
-}
-@media only screen and (max-width:600px){
     h2{
-        width: 600px;
+        width: 100%;
         font-size: 20px;
-        display: grid;
-        place-items: center;
-        margin-left: 50px;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media  screen and (max-width:1200px){
+    footer{
+        width: 100%;
+    }
+    .p-5.jumbotron{
+        width: 100%;
     }
 }
 
 
 @media only screen and (max-width:700px){
     main{
-        width: 700px;
+        width: 100%;
     }
 }
 
@@ -369,20 +296,20 @@ p{
 /* Media Queries Clientes.html */
 @media only screen and (max-width:600px){
     .intro{
-        width: 700px;
+        width: 100%;
     }
 }
 
 
 @media only screen and (max-width:600px){
     .container{
-        width: 700px;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width:1200px){
     .container{
-        width: 700px;
+        width: 100%;
     }
 }
 
