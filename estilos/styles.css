@@ -41,14 +41,14 @@ body{
 
 /*JUMBOTRON*/
 .jumbotron{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(12\).png);
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(12\).png);
     background-size: cover;
     background-position: center;
     height: 600px;
 }
 
 .jumbotron h1{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
     text-align: center;
     font-size: 50px;
     height: 200px;
@@ -65,18 +65,17 @@ body{
 }
 
 .jumbotron .indumentaria{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
 }
 
 .jumbotron .clientesTitulo{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(14\).png);
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(14\).png);
 }
-
 .jumbotron .nosotros{
-    background-image: url(/Images/tienda-ropa/Diseño\ sin\ título\ \(18\).png);
+    background-image: url(../Images/tienda-ropa/Diseño\ sin\ título\ \(24\).png);
 }
 .jumbotron .contacto-banner{
-    background-image: url(/Images/tienda-ropa/Contacto.png);
+    background-image: url(../Images/tienda-ropa/Contacto.png)
 }
 /* H2-Oferta */
 main {
